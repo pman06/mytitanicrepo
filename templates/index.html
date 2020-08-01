@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>This is the home page of the titanic project folder.</h1>
+    <h3>Enter a madeup details for a person on the TItaniv vouyage.</h3>
+
+    <form class="" action="{% url 'result' %}" method="post">
+      {% csrf_token %}
+      <p>Pclass: <input type="text" name="pclass" value=""></p>
+      <p>Sex: <select name="sex">
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select></p>
+      <p>Age: <input type="number" name="age" value=""></p>
+      <p>Sibsp: <input type="text" name="sibsp" value=""></p>
+      <p>Parents/Children: <input type="text" name="perch" value=""></p>
+      <p>Fare: <input type="text" name="fare" value=""></p>
+      <p>Embarked: <input type="text" name="embarked" value=""></p>
+      <p>Title: <input type="text" name="title" value=""></p>
+      <p><input type="submit"></p>
+    </form>
+    <p><a href="{% url 'result' %} ">result</a></p>
+  </body>
+</html>
