@@ -25,7 +25,7 @@ SECRET_KEY = ')h*3&vk5z-5(iyu2scbvz8_hbi#j@1f=_mrpbuu)4o#+w4s%-i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['18.220.218.205','ngbizhub.com','www.ngbizhub.com']
 
 
 # Application definition

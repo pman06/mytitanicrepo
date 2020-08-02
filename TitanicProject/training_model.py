@@ -5,12 +5,8 @@
 
 
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-sns.set()
 import pickle # To store machine learning models
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 data = pd.read_csv("train.csv")
