@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -21,7 +15,7 @@ def get_title(name):
         return name.split(",")[1].split(".")[0].strip()
     else:
         return "unknown"
-    
+
 #Create a function for a shorter title
 
 def short_title(x):
@@ -36,9 +30,9 @@ def short_title(x):
         return "Miss"
     else:
         return title
-    
 
-#Create a new column named "Title" and store the title of each "Name" record in the data   
+
+#Create a new column named "Title" and store the title of each "Name" record in the data
 
 data["Title"] = data["Name"].map(lambda x : get_title(x))
 #Now to have a more shorter title (group our titles to "Royalty","officer","Miss" etc)
@@ -65,4 +59,3 @@ randomforest.fit(xtrain,ytrain)
 
 filename = 'titanic_model.sav'
 pickle.dump(randomforest, open(filename, 'wb'))
-
