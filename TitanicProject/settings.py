@@ -25,6 +25,7 @@ SECRET_KEY = ')h*3&vk5z-5(iyu2scbvz8_hbi#j@1f=_mrpbuu)4o#+w4s%-i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = ['18.220.218.205','ngbizhub.com','www.ngbizhub.com']
 
 
@@ -118,3 +119,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join('static'),)

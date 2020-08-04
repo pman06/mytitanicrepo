@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
   </head>
   <body>
     <h1>This is the home page of the titanic project folder.</h1>
     <h3>Enter a madeup details for a person on the TItaniv vouyage.</h3>
-
+    <button class="test" type="button" name="button">Click Me</button>
     <form class="" action="{% url 'result' %}" method="post">
       {% csrf_token %}
       <p>Pclass: <input type="text" name="pclass" value=""></p>
@@ -25,5 +27,8 @@
       <p><input type="submit"></p>
     </form>
     <p><a href="{% url 'result' %} ">result</a></p>
+    <script type="text/javascript" src="{% static 'main.js' %}">
+
+    </script>
   </body>
 </html>
